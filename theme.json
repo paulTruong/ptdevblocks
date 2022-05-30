@@ -1,0 +1,46 @@
+{
+    "version": 2,
+    "settings": {
+        "typography": {
+            "fontFamilies": [
+                {
+                    "name": "Antique Olive",
+                    "slug": "antique-olive",
+                    "fontFamily": "antique-olive, sans-serif"
+                },
+                {
+                    "name": "FF Tisa Pro",
+                    "slug": "ff-tisa-pro",
+                    "fontFamily": "ff-tisa-web-pro, serif"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "name": "Small",
+                    "slug": "small",
+                    "size": "clamp(0.875rem, 2.5vw, 1rem)"
+                },
+                {
+                    "name": "Medium",
+                    "slug": "medium",
+                    "size": "clamp(1rem, 2.5vw, 1.25rem)"
+                },
+                {
+                    "name": "Large",
+                    "slug": "large",
+                    "size": "clamp(1.25rem, 3vw, 1.875rem)"
+                },
+                {
+                    "name": "Extra Large",
+                    "slug": "x-large",
+                    "size": "clamp(1.5rem, 3vw, 2.25rem)"
+                },
+                {
+                    "name": "2X Large",
+                    "slug": "2x-large",
+                    "size": "clamp(2.25rem, 3vw, 4.5rem)"
+                }
+            ]
+        }
+    }
+}
