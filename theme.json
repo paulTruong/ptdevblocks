@@ -31,7 +31,7 @@
             }
         },
         "layout": {
-            "contentSize": "680px",
+            "contentSize": "700px",
             "wideSize": "1200px"
         },
         "typography": {
@@ -166,6 +166,11 @@
                 },
                 "typography": {
                     "fontSize": "var(--wp--preset--font-size--medium)"
+                }
+            },
+            "core/code": {
+                "border": {
+                    "radius": "4px"
                 }
             },
             "core/image": {
