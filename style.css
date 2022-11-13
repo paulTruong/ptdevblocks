@@ -84,5 +84,6 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 
 /* PrismJS overrides */
 pre[class*="language-"] {
-    margin: 1.5rem 0 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
 }
