@@ -10,8 +10,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ptdevblocks
 */
 
-@import url("https://use.typekit.net/wzv1jaa.css");
-
 main a:hover,
 footer a:hover {
   background-color: var(--wp--preset--color--primary);

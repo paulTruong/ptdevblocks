@@ -37,14 +37,34 @@
         "typography": {
             "fontFamilies": [
                 {
-                    "name": "Antique Olive",
-                    "slug": "antique-olive",
-                    "fontFamily": "antique-olive, sans-serif"
+                    "name": "Cartridge",
+                    "slug": "cartridge",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Cartridge",
+                            "fontStretch": "normal",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "src": [
+                                "file:./assets/fonts/cartridge/Cartridge-Regular.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Cartridge",
+                            "fontStretch": "normal",
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                            "src": [
+                                "file:./assets/fonts/cartridge/Cartridge-Bold.woff2"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "Cartridge, sans-serif"
                 },
                 {
-                    "name": "FF Tisa Pro",
-                    "slug": "ff-tisa-pro",
-                    "fontFamily": "ff-tisa-web-pro, serif"
+                    "name": "Georgia",
+                    "slug": "georgia",
+                    "fontFamily": "georgia, serif"
                 }
             ],
             "fontSizes": [
@@ -56,27 +76,27 @@
                 {
                     "name": "Medium",
                     "slug": "medium",
-                    "size": "clamp(1rem, 1.5vw, 1.25rem)"
+                    "size": "clamp(1rem, 3.42vw, 1.5rem)"
                 },
                 {
                     "name": "Large",
                     "slug": "large",
-                    "size": "clamp(1.25rem, 3vw, 1.875rem)"
+                    "size": "clamp(1rem, 4.28vw, 1.875rem)"
                 },
                 {
                     "name": "Extra Large",
                     "slug": "x-large",
-                    "size": "clamp(1.875rem, 3vw, 3rem)"
+                    "size": "clamp(1.5rem, 6.85vw, 3rem)"
                 },
                 {
                     "name": "2X Large",
                     "slug": "2x-large",
-                    "size": "clamp(2.25rem, 6vw, 4.5rem)"
+                    "size": "clamp(1.875rem, 10.28vw, 4.5rem)"
                 },
                 {
                     "name": "3X Large",
                     "slug": "3x-large",
-                    "size": "clamp(2.25rem, 9vw, 6.375rem)"
+                    "size": "clamp(2.25rem, 14.28vw, 6.25rem)"
                 }
             ]
         }
@@ -87,50 +107,48 @@
             "text": "var(--wp--preset--color--foreground)"
         },
         "typography": {
-            "fontFamily": "var(--wp--preset--font-family--ff-tisa-pro)",
+            "fontFamily": "var(--wp--preset--font-family--georgia)",
             "fontSize": "var(--wp--preset--font-size--medium)",
             "lineHeight": "1.4"
         },
         "elements": {
             "h1": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--antique-olive)",
+                    "fontFamily": "var(--wp--preset--font-family--cartridge)",
                     "fontSize": "var(--wp--preset--font-size--2-x-large)",
                     "fontWeight": "700",
-                    "lineHeight": "1",
-                    "letterSpacing": "-1px"
+                    "lineHeight": "1"
                 }
             },
             "h2": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--antique-olive)",
+                    "fontFamily": "var(--wp--preset--font-family--cartridge)",
                     "fontSize": "var(--wp--preset--font-size--x-large)",
                     "fontWeight": "700",
-                    "lineHeight": "1",
-                    "letterSpacing": "-1px"
+                    "lineHeight": "1"
                 },
                 "spacing": {
                     "padding": {
-                        "top": "40px"
+                        "top": "1rem"
                     }
                 }
             },
             "h3": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--antique-olive)",
+                    "fontFamily": "var(--wp--preset--font-family--cartridge)",
                     "fontSize": "var(--wp--preset--font-size--large)",
                     "fontWeight": "700",
                     "lineHeight": "1.15"
                 },
                 "spacing": {
                     "padding": {
-                        "top": "16px"
+                        "top": "1rem"
                     }
                 }
             },
             "h4": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--antique-olive)",
+                    "fontFamily": "var(--wp--preset--font-family--cartridge)",
                     "fontSize": "var(--wp--preset--font-size--medium)",
                     "fontWeight": "700",
                     "lineHeight": "1.15"
@@ -138,7 +156,7 @@
             },
             "h5": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--ff-tisa-pro)",
+                    "fontFamily": "var(--wp--preset--font-family--georgia)",
                     "fontSize": "var(--wp--preset--font-size--small)",
                     "fontWeight": "700",
                     "lineHeight": "1.6",
@@ -147,7 +165,7 @@
             },
             "h6": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--ff-tisa-pro)",
+                    "fontFamily": "var(--wp--preset--font-family--georgia)",
                     "fontSize": "var(--wp--preset--font-size--small)",
                     "fontWeight": "400",
                     "lineHeight": "1.6",
@@ -190,7 +208,7 @@
             },
             "core/site-title": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--antique-olive)",
+                    "fontFamily": "var(--wp--preset--font-family--cartridge)",
                     "fontSize": "var(--wp--preset--font-size--large)"
                 },
                 "elements": {
