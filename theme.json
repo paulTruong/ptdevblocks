@@ -92,7 +92,7 @@
         {
           "name": "Medium",
           "slug": "medium",
-          "size": "clamp(1rem, 3.42vw, 1.5rem)"
+          "size": "clamp(1rem, 3.42vw, 1.25rem)"
         },
         {
           "name": "Large",
@@ -125,7 +125,7 @@
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--georgia)",
       "fontSize": "var(--wp--preset--font-size--medium)",
-      "lineHeight": "1.35"
+      "lineHeight": "1.4"
     },
     "elements": {
       "h1": {
