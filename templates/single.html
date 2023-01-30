@@ -1,22 +1,19 @@
 <!-- wp:template-part {"slug":"header"} /-->
 
-<!-- wp:group {"tagName":"main","align":"wide","layout":{"type":"constrained","justifyContent":"center"}} -->
+<!-- wp:group {"tagName":"main","align":"wide","layout":{"type":"constrained"}} -->
 <main class="wp-block-group alignwide">
-  <!-- wp:group {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} -->
-  <div class="wp-block-group alignwide">
-    <!-- wp:post-title {"level":1,"style":{"typography":{"lineHeight":0.9}},"fontSize":"2x-large"} /-->
+  <!-- wp:post-title {"level":1,"fontSize":"2x-large"} /-->
 
-    <!-- wp:post-date {"fontSize":"small"} /-->
+  <!-- wp:post-date {"fontSize":"small"} /-->
 
-    <!-- wp:separator {"backgroundColor":"foreground","className":"is-style-default"} -->
-    <hr
-      class="wp-block-separator has-text-color has-foreground-color has-alpha-channel-opacity has-foreground-background-color has-background is-style-default"
-    />
-    <!-- /wp:separator -->
+  <!-- wp:separator {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}},"backgroundColor":"foreground","className":"is-style-default"} -->
+  <hr
+    class="wp-block-separator has-text-color has-foreground-color has-alpha-channel-opacity has-foreground-background-color has-background is-style-default"
+    style="margin-bottom: var(--wp--preset--spacing--20)"
+  />
+  <!-- /wp:separator -->
 
-    <!-- wp:post-content {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} /-->
-  </div>
-  <!-- /wp:group -->
+  <!-- wp:post-content {"layout":{"type":"constrained","justifyContent":"left"}} /-->
 </main>
 <!-- /wp:group -->
 
