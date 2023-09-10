@@ -25,9 +25,14 @@ pre[class*="language-"] {
     text-decoration: none !important;
 }
 
-h2 + p,
-h3 + p,
-h4 + p,
-h5 + p {
+h2+p,
+h3+p,
+h4+p,
+h5+p {
     margin-top: 8px;
+}
+
+.wp-block-quote cite {
+    padding-bottom: var(--wp--preset--spacing--20);
+    display: block;
 }
