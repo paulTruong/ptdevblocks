@@ -10,6 +10,27 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ptdevblocks
 */
 
+:root {
+    --shadow-color: 30deg 100% 50%;
+    --shadow-elevation-low:
+        0.7px 0.7px 0.9px hsl(var(--shadow-color) / 0.23),
+        1.2px 1.2px 1.6px -1.9px hsl(var(--shadow-color) / 0.18),
+        3.6px 3.6px 4.8px -3.7px hsl(var(--shadow-color) / 0.13);
+    --shadow-elevation-medium:
+        0.7px 0.7px 0.9px hsl(var(--shadow-color) / 0.25),
+        2.1px 2.1px 2.8px -1.2px hsl(var(--shadow-color) / 0.21),
+        6.6px 6.5px 8.7px -2.5px hsl(var(--shadow-color) / 0.16),
+        18.2px 17.9px 23.9px -3.7px hsl(var(--shadow-color) / 0.12);
+    --shadow-elevation-high:
+        0.7px 0.7px 0.9px hsl(var(--shadow-color) / 0.26),
+        4px 4px 5.3px -0.6px hsl(var(--shadow-color) / 0.24),
+        9.2px 9.1px 12.1px -1.2px hsl(var(--shadow-color) / 0.21),
+        19.3px 19px 25.4px -1.9px hsl(var(--shadow-color) / 0.19),
+        37.3px 36.7px 49.1px -2.5px hsl(var(--shadow-color) / 0.16),
+        66.2px 65.2px 87.1px -3.1px hsl(var(--shadow-color) / 0.14),
+        108.9px 107.3px 143.3px -3.7px hsl(var(--shadow-color) / 0.11);
+}
+
 /* PrismJS overrides */
 pre[class*="language-"] {
     margin-top: 1.5rem !important;
@@ -35,4 +56,21 @@ h5+p {
 .wp-block-quote cite {
     padding-bottom: var(--wp--preset--spacing--20);
     display: block;
+}
+
+.wp-block-button__link {
+    transition: 0.5s;
+    background-image: var(--wp--preset--gradient--main-gradient);
+    color: var(--wp--preset--color--background);
+}
+
+.wp-block-button__link:hover {
+    background-image: linear-gradient(135deg, #FE5E23 0%, #FE5E23 100%);
+    color: var(--wp--preset--color--foreground);
+}
+
+.is-root-container {
+    max-width: var(--wp--style--global--content-size) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
