@@ -9,6 +9,11 @@
                     "slug": "main-gradient",
                     "gradient": "linear-gradient(135deg, #FCC934 0%, #FE5E23 25%, #FB202F 50%, #B61D3C 75%, #6C2240 100%)",
                     "name": "Main Gradient"
+                },
+                {
+                    "slug": "main-gradient-hard-stop",
+                    "gradient": "linear-gradient(90deg, #FCC934 , #FCC934 20%, #FE5E23 20%, #FE5E23 40%, #FB202F 40%, #FB202F 60%, #B61D3C 60%, #B61D3C 80%, #6C2240 80%, #6C2240)",
+                    "name": "Main Gradient with hard stops"
                 }
             ],
             "palette": [
