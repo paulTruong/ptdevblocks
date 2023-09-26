@@ -4,7 +4,7 @@ Author: Paul Truong
 Author URI: https://www.paultruong.dev/
 Requires at least: 6.3
 Requires PHP: 7.4
-Version: 1.6
+Version: 1.6.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ptdevblocks
@@ -74,7 +74,7 @@ h5+p {
 }
 
 .wp-block-button__link {
-    transition: 0.5s;
+    transition: color 0.3s;
     background-image: var(--wp--preset--gradient--main-gradient);
     color: var(--wp--preset--color--background);
 }
@@ -82,6 +82,12 @@ h5+p {
 .wp-block-button__link:hover {
     background-image: linear-gradient(135deg, #FE5E23 0%, #FE5E23 100%);
     color: var(--wp--preset--color--foreground);
+}
+
+.wp-block-button.is-style-outline>.wp-block-button__link:hover {
+    background-image: var(--wp--preset--gradient--main-gradient);
+    color: var(--wp--preset--color--background);
+    border-color: #fff;
 }
 
 .is-root-container {
