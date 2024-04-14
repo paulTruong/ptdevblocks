@@ -1,52 +1,14 @@
 <?php
+if (!function_exists('ptdevblocks_theme_setup')) {
 
-if (!function_exists('ptdevblocks_support')) :
-
-    /**
-     * Sets up theme defaults and registers support for various WordPress features.
-     *
-     * @since Twenty Twenty-Two 1.0
-     *
-     * @return void
-     */
-    function ptdevblocks_support()
+    function ptdevblocks_theme_setup()
     {
-
         // Enqueue editor styles.
         add_editor_style('style.css');
     }
-
-endif;
-
-add_action('after_setup_theme', 'ptdevblocks_support');
-
-if (!function_exists('ptdevblocks_styles')) {
-
-    /**
-     * Enqueue styles.
-     *
-     * @since Twenty Twenty-Two 1.0
-     *
-     * @return void
-     */
-    function ptdevblocks_styles()
-    {
-        // Register theme stylesheet.
-        $theme_version = wp_get_theme()->get('Version');
-
-        $version_string = is_string($theme_version) ? $theme_version : false;
-        wp_register_style(
-            'ptdevblocks-style',
-            get_template_directory_uri() . '/style.css',
-            array(),
-            $version_string
-        );
-
-        // Enqueue theme stylesheet.
-        wp_enqueue_style('ptdevblocks-style');
-    }
 }
-add_action('wp_enqueue_scripts', 'ptdevblocks_styles');
+add_action('after_setup_theme', 'ptdevblocks_theme_setup');
+
 
 if (!function_exists('ptdevblocks_load_prismjs')) {
 
@@ -74,3 +36,19 @@ if (!function_exists('ptdevblocks_load_prismjs')) {
     }
 }
 add_action('wp_enqueue_scripts', 'ptdevblocks_load_prismjs');
+
+if (!function_exists('ptdevblocks_enqueue_scripts')) {
+
+    function ptdevblocks_enqueue_scripts()
+    {
+        wp_register_style('ptdevblocks-style', get_stylesheet_uri());
+
+        // Enqueue theme stylesheet.
+        wp_enqueue_style('ptdevblocks-style');
+    }
+}
+add_action('wp_enqueue_scripts', 'ptdevblocks_enqueue_scripts');
+
+// //remove emoji support
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
